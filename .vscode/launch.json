@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/User/Documents/data structure from scratch",
-      "program": "c:/Users/User/Documents/data structure from scratch/build/Debug/outDebug",
+      "cwd": "c:/Users/User/Documents/Coding/data structure from scratch",
+      "program": "c:/Users/User/Documents/Coding/data structure from scratch/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

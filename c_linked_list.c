@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 struct node
 {
     int val;
@@ -33,6 +34,7 @@ int main(){
         clean = current;
         current = current->next;
         free(clean);
+        printf("%d\n\n",clean->val);
     }
     return 0;
 }
