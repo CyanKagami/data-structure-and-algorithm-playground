@@ -1,13 +1,16 @@
 class stack():
     def __init__(self) -> None:
         self.val = []
+        self.count = 0
     
     def push(self,val):
         self.val.append(val)
+        self.count+=1
 
     def pop(self):
         if not self.val:
             return None
+        self.count-=1
         return self.val.pop()
     
     def peek(self):
