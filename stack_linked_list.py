@@ -5,26 +5,29 @@ class node():
 
 class stack():
     def __init__(self) -> None:
-        self.head = None
+        self.top = None
+        self.count = 0
     
     def push(self,val):
-        next_node = node(val,self.head)
-        self.head = next_node;
+        next_node = node(val,self.top)
+        self.top = next_node;
+        self.count+=1
 
     def pop(self):
-        if not self.head:
+        if not self.top:
             return None
-        val = self.head.val
-        self.head = self.head.next
+        val = self.top.val
+        self.top = self.top.next
+        self.count-=1
         return val
     
     def peek(self):
-        if not self.head:
+        if not self.top:
             return None
-        return self.head.val
+        return self.top.val
 
     def print_stack(self):
-        current = self.head
+        current = self.top
         while current:
             print(current.val)
             current = current.next
